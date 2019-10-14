@@ -160,4 +160,4 @@ set(VST3_OUTPUT_DIR ${CMAKE_BINARY_DIR}/VST3)
 smtg_add_vst3plugin(${target} ${VST3_SDK_ROOT} ${mda-vst3_sources})
 target_include_directories(${target} PRIVATE ${VST3_SDK_ROOT})
 target_link_libraries(${target} PRIVATE base sdk)
-
+target_compile_options(${target} PRIVATE "-ffast-math")
