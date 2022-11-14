@@ -219,7 +219,6 @@ void PianoProcessor::doProcessing (ProcessData& data)
 
 				if (!(l > -2.0f) || !(l < 2.0f))
 				{
-					printf ("what is this shit?   %d,  %f,  %f\n", i, x, V->f0);
 					l = 0.0f;
 				}  
 				if (!(r > -2.0f) || !(r < 2.0f))
